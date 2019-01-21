@@ -1,0 +1,7 @@
+{
+  "name": "myLandingPage",
+  "private": true,
+  "dependencies": {
+    "mdbootstrap": "^4.6.1"
+  }
+}

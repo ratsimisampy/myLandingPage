@@ -1,0 +1,109 @@
+
+<%= stylesheet_link_tag "application", :media => "all" %>
+<%= javascript_include_tag "application" %> 
+<% provide(:title, 'Rado Photography | Home') %>
+    <%= render "layouts/header" %>
+
+
+    
+    
+    <main class="mt-5">
+    <div class="container">
+      <h1 class="display-4 mt-2">Rado Photographie</h1>
+      <h2 class="lead">Formation en prise de vue numérique</h2>
+      <a class="js-scrollTo" href="#concept"><button type="button" class="btn btn-outline-primary btn-lg mt-3">Découvrir</button></a>
+    </div>
+
+
+    
+
+    <div id="concept" class="container mt-5 mb-5">
+        <h1 class="title"></h1>
+        <div class="text-left">Pratiquant la photographie numérique depuis 10 ans et ayant excercé en tant que photographe professionnel de mariage depuis plus de 3 ans à Paris,</div>
+        <div class="img-right">je vous propose des formations adaptées à tous les niveaux (débutant, intermédiaire et avancé) en prise de vue.</div>
+    </div>
+
+    <div id="program" class="container mb-5">
+	<h3 class="mb-3">Au programme</h3>
+
+	<h5 class="mt-4 mb-5">Au programme</h5>
+
+	<div class="row">
+		<div class="col-sm-12 col-md-6 col-lg-6">
+	      <h2 class="mb-3">Les bases</h2>
+	      <p>Avoir un appareil c'est bien mais connaître les rudiments techniques c'est encore mieux </p>
+	    </div>
+	    <div class="col-sm-12 col-md-6 col-lg-6">
+	      <h2 class="mb-3">Portrait de famille</h2>
+	      <p>Vous avez appris à manipuler votre appareil, maintenant place à la pratique. Quoi de mieux que prendre vos proches en photos !</p>
+	    </div>
+	</div>
+	<div class="row mt-4">
+		<div class="col-sm-12 col-md-6 col-lg-6">
+	      <h2 class="mb-3">Paysage</h2>
+	      <p>Sortir du cadre familliale et pratqiquer la photo "sur le terrain". Je vous partage mon expérience.</p>
+	    </div>
+	    <div class="col-sm-12 col-md-6 col-lg-6">
+	      <h2 class="mb-3">Pour aller plus loin</h2>
+	      <p>Pour aborder des techniques plus avancées, tel que la retouche ou l'organisation de vos catalogues photos...</p>
+	    </div>
+	</div>
+
+    <div id="session" class="container">
+	<h3 class="mt-5 mb-5">Prochaines sessions</h3>
+	<table class="table table-borderless">
+	  <thead>
+	    <tr>
+	      <th scope="col">Session n°</th>
+	      <th scope="col">Thème</th>
+	      <th scope="col">Date</th>
+	      <th scope="col">Fermeture inscriptions</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <th scope="row">1</th>
+	      <td>Bases de la photographie</td>
+	      <td>samedi 16 février 2019</td>
+	      <td>samedi 02 février 2019 à 23h59</td>
+	    </tr>
+	    <tr>
+          <th scope="row">2</th>
+          <td>Portrait de famille</td>
+	      <td>samedi 23 février 2019</td>
+	      <td>samedi 09 février 2019 à 23h59</td>
+	    </tr>
+	    <tr>
+          <th scope="row">3</th>
+          <td>Bases de la photographie</td>
+	      <td>samedi 09 mars 2019</td>
+	      <td>samedi 16 février 2019 à 23h59</td>
+	    </tr>
+	    <tr>
+          <th scope="row">4</th>
+          <td>Portrait de famille</td>
+	      <td>samedi 16 mars 2019</td>
+	      <td>samedi 02 mars 2019 à 23h59</td>
+	    </tr>
+	  </tbody>
+	</table>
+
+<!-- Begin Mailchimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="https://herokuapp.us19.list-manage.com/subscribe/post?u=07f4d7c0754b19b2fe8c2280b&amp;id=d9c437a9cf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<div id="mc_embed_signup_scroll">
+<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_07f4d7c0754b19b2fe8c2280b_d9c437a9cf" tabindex="-1" value=""></div>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary"></div>
+</div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+</div>
+
+    </main>
+<%= render "layouts/footer" %>
+  
