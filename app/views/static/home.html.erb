@@ -1,164 +1,163 @@
-
-<%= stylesheet_link_tag "application", :media => "all" %>
-<%= javascript_include_tag "application" %> 
+<% provide(:title, 'Rado Rakotondrabe | Home') %>
 <%= render "layouts/header" %>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4 mt-2">Workshop photography</h1>
+    <h2 class="lead">S'initier la photographie numérique</h2>
+    <a class="js-scrollTo" href="#concept"><button type="button" class="btn btn-outline-primary btn-lg mt-3">Découvrir</button></a>
+  </div>
+</div>
+
+<main>
+<div id="concept" class="container mt-5 mb-5">
+	<div class="row align-items-start">
+			<div class="col-sm-12 col-md-12 col-lg-6 mb-3">
+				<h3 class="mb-5">Le concept</h3>
+				<p>
+					Vous possedez un appareil photo numérique ? (peu importe, que ce soit un compact, un reflex ou même votre telephone) mais vous aimeriez pouvoir mieux vous en servir ? Vous possedez des bases techniques en photographie mais souhaiteriez aller plus loin que le mode automatique ? Vous avez simplement soif de partager votre passion avec d'autres personnes ?
+				</p> 
+				<p>Alors ce programme est fait pour vous ! </p>
+				<p>En vous inscrivant ci-dessous, vous profiterez de l'offre de lancement gratuite</p>
+				<!-- Begin Mailchimp Signup Form -->
+				<div id="mc_embed_signup">
+					<form action="https://herokuapp.us19.list-manage.com/subscribe/post?u=07f4d7c0754b19b2fe8c2280b&amp;id=d9c437a9cf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<div id="mc_embed_signup_scroll">
+							<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="mon_adresse@email.com" required>
+						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						<div style="position: absolute; left: -5000px;" aria-hidden="true">
+							<input type="text" name="b_07f4d7c0754b19b2fe8c2280b_d9c437a9cf" tabindex="-1" value=""></div>
+						<div class="clear">
+							<input type="submit" value="Je souscris" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary"></div>
+						</div>
+					</form>
+				</div>
+				<!--End mc_embed_signup-->
+
+	    </div>
+
+	    <div class="col-sm-12 col-md-12 col-lg-6">
+	    	<%= image_tag("workshop.jpg", class: "rounded img-fluid") %>
+	    </div>
+  	</div>
+
+</div>
+
+<div id="program" class="container mb-5">
+	<h3 class="mb-3">Programme</h3>
+
+	<h5 class="mt-4 mb-5">Les différents ateliers</h5>
+
+	<div class="row">
+		<div class="col-sm-12 col-md-6 col-lg-6">
+	      <h2 class="mb-3">Atelier "Les bases de la prise de vue"</h2>
+				<p>Objectif: apprendre les rudiments. Courte introduction à la photo et son histoire. trève de blabla. Voyons l'essentiel pour débuter.
+				Puis comment apprendre par soi-même; où se ressourcer sur internet, à Kampala etc...</p>
+	    </div>
+	    <div class="col-sm-12 col-md-6 col-lg-6">
+	      <h2 class="mb-3">Atelier "Prise en main de son matériel" </h2>
+	      <p>Problematique: J'ai un appareil mais je ne sais pas utiliser la moitié de ses fonctions. Je veux aller au cas pratique rapidement.</p>
+	    </div>
+	</div>
+	<div class="row mt-4">
+		<div class="col-sm-12 col-md-6 col-lg-6">
+	      <h2 class="mb-3">Atelier: Je suis équipé, je souhaite aller plus loin dans ma pratique et et connaissances.</h2>
+	      <p>Partageons nos expérience pour en tirer les leçons et enrichir nos échanges avec les autres</p>
+	    </div>
+	    <div class="col-sm-12 col-md-6 col-lg-6">
+	      <h2 class="mb-3">Atelier, j'ai de bonnes connaissances, je veux pouvoir partager ma passion et approfondir ma pratique</h2>
+	      <p>Echangeons à travers nos experiences; essayons de trouver ensemble comment à travers le partage d'idées, nous pouvons ensemble toujours progresser.</p>
+	    </div>
+	</div>
+	 
+	<h5 class="mt-4 mb-5">Détails des programmes</h5>
+	<div class="row">
+	  <div class="col-sm-12 col-md-6 col-lg-4">
+
+	    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+	      <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Les bases</a>
+	      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Le matériel et sa prise en main</a>
+	      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Atelier thématique</a>
+	      <!-- <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Expert</a> -->
+	    </div>
+	  </div>
+
+	  <div class="col-sm-12 col-md-6 col-lg-8">
+
+	    <div class="tab-content container mt-2" id="v-pills-tabContent">
+	      <div class="tab-pane fade show active justif" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">Nous ferons 2 heures de théorie  suivi d'une heure de cas pratique. Nous survolerons les dates et évènements clés de l'histoire de la photographie. Nous étudierons les notions techniques telles que le cadrage, la composition, le triangle d'exposition.<br/><br/>
+		  En seconde partie, nous ferons des cas pratiques autour d'une séance portrait ou nature morte</div>
+	      <div class="tab-pane fade justif" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">Il s'agit d'un accompagnement plus individualisé selon le besoin de chacun. Pas à pas nous pourrons étudier le fonctionnement de votre appareil si besoin. Cet atelier necéssite que vous ayez acquis les connaissances de bases de l'atelier 1er niveau<br/><br/>
+		  Cas pratique. 2 heures</div>
+				<div class="tab-pane fade justif" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Nous considèrerons pour cet atelier que les participants possèdent les bases techniques essentielles de la photographie ainsi que la maitrîse de leur appareil photo.
+				Nous travaillerons sur un thème particulier. Par exemple: le cadrage, la lumière, le noir & blanc ...".<br/><br/>
+		  Cas pratique. 2 heures</div>
+	      <!-- <div class="tab-pane fade justif" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">Thème à prévoir<br/><br/> -->
+		  </div>
+	    </div>
+	  </div>
+	
 
 
+	</div>
 
-<!--Main layout-->
-<main class="mt-5">
-    <div class="container">
+<div id="session" class="container">
+	<h3 class="mt-5 mb-5">Prochaines sessions</h3>
+	<table class="table table-borderless">
+	  <thead>
+	    <tr>
+	      <th scope="col">Session n°</th>
+	      <th scope="col">Thème</th>
+	      <th scope="col">Date</th>
+				<th scope="col">Fermeture inscriptions</th>
+				<th>Tarif</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <th scope="row">1</th>
+	      <td>Les bases</td>
+	      <td>samedi 23 février 2019<br/> <i class="horaires">de 09h à 11h puis de 11H15 à 12h15</i></td>
+				<td>samedi 16 février 2019 à 23h59</td>
+				<td>Gratuit</td>
+	    </tr>
+	    <tr>
+          <th scope="row">2</th>
+          <td>Les bases</td>
+	      <td>samedi 02 mars 2019<br/> <i class="horaires">de 09h à 11h</i> puis <i>de 11h15 à 12h15</i></td>
+				<td>samedi 23 février 2019 à 23h59</td>
+				<td>Gratuit</td>
+	    </tr>
+	    <tr>
+          <th scope="row">3</th>
+          <td>Prise en main de votre matériel</td>
+	      <td>samedi 16 mars 2019<br/> <i class="horaires">de 10h à 12h</i> puis <i class="horaires">de 13h à 15h30</i></td>
+				<td>samedi 09 mars 2019 à 23h59</td>
+				<td>Payant</td>
+	    </tr>
+	    <tr>
+          <th scope="row">4</th>
+          <td>Cadrage & composition, théorie & pratique</td>
+	      <td>samedi 16 mars 2019</td>
+				<td>samedi 02 mars 2019 à 23h59</td>
+				<td>Payant</td>
+	    </tr>
+	  </tbody>
+	</table>
 
-    <!--Section: Programme-->
-    <section id="program" class="text-center">
-    
-      <!-- Heading -->
-      <h2 class="mb-5">Au programme</h2>
-    
-      
-    
-      <!--Grid row-->
-      <div class="row">
-    
-          <!--Grid column-->
-          <div class="col-md-4 mb-1">
-              <i class="fas fa-camera-retro fa-4x"></i>
-              <h4 class="my-4 font-weight-bold">Les bases</h4>
-              <p class="grey-text">Avoir un appareil c'est bien mais connaître les rudiments techniques c'est encore mieux.</p>
-          </div>
-          <!--Grid column-->
-    
-          <!--Grid column-->
-          <div class="col-md-4 mb-1">
-              <i class="fas fa-heart fa-4x"></i>
-              <h4 class="my-4 font-weight-bold">Famille</h4>
-              <p class="grey-text">Vous avez appris à manipuler votre appareil, maintenant place à la pratique. Quoi de mieux que de prendre vos proches en photos !</p>
-          </div>
-          <!--Grid column-->
-    
-          <!--Grid column-->
-          <div class="col-md-4 mb-1">
-              <i class="fas fa-bicycle fa-4x"></i>
-              <h4 class="my-4 font-weight-bold">Paysage</h4>
-              <p>Sortir du cadre famillial et pratqiquer la photo "sur terrain". Je vous partage mon expérience.</p>
-          </div>
-          <!--Grid column-->
-    
-      </div>
-      <!--Grid row-->
-    
-    </section>
-    <!--Section: Programme-->
+<!-- Begin Mailchimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="https://herokuapp.us19.list-manage.com/subscribe/post?u=07f4d7c0754b19b2fe8c2280b&amp;id=d9c437a9cf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<div id="mc_embed_signup_scroll">
+<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_07f4d7c0754b19b2fe8c2280b_d9c437a9cf" tabindex="-1" value=""></div>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary"></div>
+</div>
+</form>
+</div>
 
-        <hr class="my-5">
+<!--End mc_embed_signup-->
 
-        <!--Section: Examples-->
-<section id="examples" class="text-center">
-
-    <!--Grid row-->
-    <div class="row">
-
-    <!--Grid column-->
-    <div class="col-lg-4 col-md-12 mb-4">
-    
-      <div class="view overlay zoom">
-        <img src="https://mdbootstrap.com/img/Photos/Others/images/48.jpg" class="img-fluid">
-        <a href="#!">
-          <div class="mask rgba-white-slight"></div>
-        </a>
-      </div>
-      
-      <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam,
-        aperiam minima
-        assumenda deleniti hic.</p>
-    </div>
-    <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-12 mb-4">
-    
-        <div class="view overlay zoom">
-          <img src="https://mdbootstrap.com/img/Photos/Others/images/48.jpg" class="img-fluid">
-          <a href="#!">
-            <div class="mask rgba-white-slight"></div>
-          </a>
-        </div>
-        
-        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam,
-          aperiam minima
-          assumenda deleniti hic.</p>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-12 mb-4">
-    
-        <div class="view overlay zoom">
-          <img src="https://mdbootstrap.com/img/Photos/Others/images/48.jpg" class="img-fluid">
-          <a href="#!">
-            <div class="mask rgba-white-slight"></div>
-          </a>
-        </div>
-        
-        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam,
-          aperiam minima
-          assumenda deleniti hic.</p>
-        </div>
-        <!--Grid column-->
-
-    </div>
-    <!--Grid row-->
-
-    <!--Grid row-->
-    <div class="row">
-
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-12 mb-4">
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4">
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4">
-
-        </div>
-        <!--Grid column-->
-
-    </div>
-    <!--Grid row-->
-
-</section>
-<!--Section: Examples-->
-
-        <hr class="my-5">
-
-        <!--Section: Gallery-->
-        <section id="gallery">
-
-
-
-        </section>
-        <!--Section: Gallery-->
-
-        <hr class="my-5">
-
-        <!--Section: Contact-->
-        <section id="contact">
-
-
-
-        </section>
-        <!--Section: Contact-->
-
-    </div>
+</div>
 </main>
-<!--Main layout-->
-
-
-<%= render "layouts/footer" %>
+ <%= render "layouts/footer" %>
